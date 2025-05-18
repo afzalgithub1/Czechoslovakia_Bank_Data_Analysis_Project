@@ -99,7 +99,7 @@ CREATE OR REPLACE STORAGE integration s3_int
 TYPE = EXTERNAL_STAGE
 STORAGE_PROVIDER = S3
 ENABLED = TRUE
-STORAGE_AWS_ROLE_ARN ='arn:aws:iam::688930150039:role/snowbankrole' -- role ARN
+STORAGE_AWS_ROLE_ARN ='xxxxxxxxxxxxxxxxxxxxxxx' -- role ARN
 STORAGE_ALLOWED_LOCATIONS =('s3://czechbankdata07'); -- bucket name
 
 desc integration s3_int;
