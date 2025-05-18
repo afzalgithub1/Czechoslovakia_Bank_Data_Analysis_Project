@@ -120,7 +120,7 @@ LIST @BANK;
 
 SHOW STAGES;
 
------------------------------------------
+----------------------------------------- ---
 
 --CREATING SNOWPIPE THAT RECOGNISES CSV THAT ARE INGESTED FROM EXTERNAL STAGE AND COPIES THE DATA INTO EXISTING TABLE
 
