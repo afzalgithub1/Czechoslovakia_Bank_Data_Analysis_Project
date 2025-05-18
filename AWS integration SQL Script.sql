@@ -100,7 +100,7 @@ TYPE = EXTERNAL_STAGE
 STORAGE_PROVIDER = S3
 ENABLED = TRUE
 STORAGE_AWS_ROLE_ARN ='xxxxxxxxxxxxxxxxxxxxxxx' -- role ARN
-STORAGE_ALLOWED_LOCATIONS =('s3://czechbankdata07'); -- bucket name
+STORAGE_ALLOWED_LOCATIONS =('s3://czechbankdata'); -- bucket name
 
 desc integration s3_int;
 
@@ -112,8 +112,7 @@ CREATE OR REPLACE FILE FORMAT CSV_BANK
   EMPTY_FIELD_AS_NULL = TRUE;
 
 CREATE OR REPLACE STAGE BANK
-URL ='s3://czechbankdata07'
---credentials=(aws_key_id='AKIAXQKR3H3PSG72XFMK'aws_secret_key='eKL6a6FjlQHic4s8Ne712Aelzg2ou4j6tNsVvFq5')
+URL ='s3://czechbankdata'
 file_format = CSV_BANK
 storage_integration = s3_int;
 
