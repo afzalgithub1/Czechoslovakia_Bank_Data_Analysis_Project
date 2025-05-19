@@ -35,5 +35,6 @@ graph TD
     B --> C[Snowflake Tables]
     C --> D[SQL Transformations and Data Cleaning]
     D --> E[Analytical Tables (KPIs)]
-    E --> F[Ad-Hoc Insights and BI Reporting]```
+    E --> F[Ad-Hoc Insights and BI Reporting]
+```
 
