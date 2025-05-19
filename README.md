@@ -29,12 +29,10 @@ The project simulates a modern data pipeline and analytics flow by performing th
 
 ## 🏗️ Project Architecture
 
-```mermaid
-graph TD
     A[CSV Data in S3 Bucket] -->|Auto-ingest via SQS| B[Snowpipe]
     B --> C[Snowflake Tables]
     C --> D[SQL Transformations and Data Cleaning]
     D --> E[Analytical Tables (KPIs)]
     E --> F[Ad-Hoc Insights and BI Reporting]
-```
+
 
